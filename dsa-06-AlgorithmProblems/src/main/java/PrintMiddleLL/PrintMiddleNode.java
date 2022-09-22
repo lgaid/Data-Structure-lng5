@@ -20,7 +20,7 @@ public class PrintMiddleNode {
             b = b.next.next; // double jump
 
         }
-
+        // b is located either on tail or before tail
         if (b == sll.tail) System.out.println(a.id);
         else System.out.println(a.id + "," + a.next.id);
 
