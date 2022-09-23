@@ -12,7 +12,7 @@ public class Solution {
         n1.next=n2;
         n2.next=n3;
         n3.next=n4;
-        n4.next=n2;
+        n4.next=null;
         System.out.println(hasCycle(n1));
     }
     public static boolean hasCycle(ListNode head) {
