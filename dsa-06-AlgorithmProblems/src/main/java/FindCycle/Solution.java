@@ -26,7 +26,6 @@ public class Solution {
             visited.add(current);
             current = current.next;
         }
-
         return false;
     }
 
