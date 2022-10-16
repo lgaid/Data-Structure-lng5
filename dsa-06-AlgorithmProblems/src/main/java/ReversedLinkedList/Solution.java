@@ -13,14 +13,14 @@ public class Solution {
      static void reverse(MySinglyLinkedList list) {
         // create 2 pointers
          Node prev = list.head;
-         Node currrent = list.head.next;
+         Node current = list.head.next;
 
          // while loop to iterate until curr = null
-         while (currrent != null){
-             Node nextNode = currrent.next;
-             currrent.next = prev;  //change direction of current to prev
-             prev = currrent;  // move prev to right to the current
-             currrent = nextNode;  // move current to right on the next node
+         while (current != null){
+             Node nextNode = current.next;
+             current.next = prev;  //change direction of current to prev
+             prev = current;  // move prev to right to the current
+             current = nextNode;  // move current to right on the next node
 
          }
 
