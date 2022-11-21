@@ -13,14 +13,14 @@ public class VisualizeTree {
         printTree(root.rightChild, trunk, true);
 
         if (prev == null) {
-            trunk.str = "———";
+            trunk.str = "---";
         }
         else if (isLeft) {
-            trunk.str = ".———";
+            trunk.str = ".---";
             prev_str = "   |";
         }
         else {
-            trunk.str = "`———";
+            trunk.str = "`---";
             prev.str = prev_str;
         }
 
@@ -43,8 +43,6 @@ public class VisualizeTree {
         showTrunks(p.prev);
         System.out.print(p.str);
     }
-
-
 
 
 
