@@ -1,6 +1,5 @@
 public class Trunk {
 
-
     Trunk prev;
     String str;
     Trunk(Trunk prev, String str)

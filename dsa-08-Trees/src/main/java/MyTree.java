@@ -118,5 +118,25 @@ public class MyTree {
 
     }
 
+    public int calculateNodeDepthSums(){
+        return nodeDepthSums(root, 0);
+    }
+    // Assignment  Sum of Node Depths
+    public int nodeDepthSums(TNode node, int A){
+        if(node==null) return 0;
+        System.out.println(A);
+        return A+nodeDepthSums(node.leftChild, A+1) +nodeDepthSums(node.rightChild, A+1);
+    }
+    // Assignment  Sum of All Nodes recursively
+    public int calculateNodeSums(){
+        return nodeSums(root);
+    }
+
+    public int nodeSums(TNode node){
+        if(node==null) return 0;
+
+        return node.value+ nodeSums(node.leftChild)+nodeSums(node.rightChild);
+    }
+    // Sum of all Nodes
 
 }
